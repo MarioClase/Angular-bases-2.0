@@ -3,11 +3,10 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { CounterModule } from './counter/conunter.module';
-
+import { HeroesModule } from './heroes/heroes.module';
+import { DbzModule } from './dbz/dbz.module';
 
 import { AppComponent } from './app.component';
-import { HeroesModule } from './heroes/heroes.module';
-
 
 
 @NgModule({
@@ -18,7 +17,8 @@ import { HeroesModule } from './heroes/heroes.module';
     BrowserModule,
     CounterModule,
     HeroesModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DbzModule,
   ],
   providers: [
     // provideClientHydration()
